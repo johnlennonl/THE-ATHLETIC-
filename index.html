@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Athletic</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link rel="shortcut icon" href="images/Icono.png" type="image/x-icon" />
+    <!-- SweetAlert2 CSS (opcional si quieres estilos predeterminados) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ====== HERO / PORTADA ====== -->
+    <section
+  id="hero"
+  class="text-white"
+  style="height: 80vh; background: url('images/imageBanner.png') center/cover no-repeat;"
+>
+  <!-- Aquí quitamos la clase que pintaba gris y usamos bg-transparent -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm">
+    <div class="container">
+      <div class="contenedorLogo">
+        <img
+          src="images/No Limits (3).png"
+          alt="Logo"
+          class="Logotipo img-fluid"
+        />
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#entrenadores">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coffe-suplements">
+              Coffe & Suplements
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#preinscripcion">Preinscripción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-5">
+    <h1 class="display-4 fw-bold">Bienvenido a The Athletic</h1>
+    <p class="lead">
+      ¡Transforma tu cuerpo y tu mente con nuestros entrenadores expertos!
+    </p>
+    <a href="#preinscripcion" class="btn btn-primary btn-lg">¡Únete Hoy!</a>
+  </div>
+</section>
+
+    <!-- ====== SECCIÓN ENTRENADORES ====== -->
+    <section id="entrenadores" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuestros Entrenadores</h2>
+        <div class="row">
+          <!-- Ejemplo de card de entrenador -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow">
+              <img
+                src="https://cdn.prod.website-files.com/6729353b4fd7317cce16db89/673ce0f0eef0371584f7da85_hotworx_portraits_0003_2024VIportraits_DF-154-p-800.jpg"
+                class="card-img-top"
+                alt="Entrenador 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">CHRISTOPHER POIRIER</h5>
+                <p class="card-text">
+                  Especialista en entrenamiento funcional y musculación.
+                </p>
+                <div>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repite col-md-4 para cada entrenador -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow">
+              <img
+                src="https://cdn.prod.website-files.com/6729353b4fd7317cce16db89/673ce13a4d5503c0573cbce3_hotworx_portraits_0005_2024VIportraits_DF-491-p-800.jpg"
+                class="card-img-top"
+                alt="Entrenador 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">STEPHANIE WILLEY</h5>
+                <p class="card-text">
+                  Especialista en yoga y pilates para deportistas.
+                </p>
+                <div>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Otra card -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow">
+              <img
+                src="https://cdn.prod.website-files.com/6729353b4fd7317cce16db89/673ce283bb3c0eae423ac39f_hotworx_portraits_0002_2024VIportraits_DF-25-p-800.jpg"
+                class="card-img-top"
+                alt="Entrenador 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">ALLISON EVERSOLL</h5>
+                <p class="card-text">
+                  Coach de crossfit y entrenamiento de alta intensidad.
+                </p>
+                <div>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECCIÓN COFFE & SUPLEMENTS ====== -->
+
+    <section id="coffe-suplements" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Coffe & Suplements</h2>
+        <!-- Contenedor vacío donde inyectaremos los productos -->
+        <div id="productos-container" class="row"></div>
+        <div class="d-flex justify-content-center mt-4">
+         <a href="#hero">
+             <button class="cta">
+  <span class="hover-underline-animation"> Ver Mas Productos </span>
+  <svg
+    id="arrow-horizontal"
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="10"
+    viewBox="0 0 46 16"
+  >
+    <path
+      id="Path_10"
+      data-name="Path 10"
+      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+      transform="translate(30)"
+    ></path>
+  </svg>
+</button>
+         </a>
+  
+            <span class="ms-2">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+    </section>
+    <!-- Puedes agregar hasta 4 productos por fila para mantener la cuadrícula -->
+
+    <!-- ====== SECCIÓN DE PREINSCRIPCIÓN ====== -->
+    <section id="preinscripcion" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Preinscríbete Ahora</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="formPreinscripcion">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="tucorreo@ejemplo.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="+58 412 1234567"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="objetivo" class="form-label"
+                  >¿Cuál es tu objetivo?</label
+                >
+                <textarea
+                  class="form-control"
+                  id="objetivo"
+                  rows="3"
+                  placeholder="Ej. Ganar masa muscular"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">
+                Enviar Preinscripción
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECCIÓN TESTIMONIOS (OPCIONAL) ====== -->
+    <!-- <section id="testimonios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Las instalaciones de GymPana son increíbles y los entrenadores muy profesionales."</p>
+            <footer class="blockquote-footer">María López</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"He bajado 5kg en 2 meses gracias al plan personalizado que me hicieron."</p>
+            <footer class="blockquote-footer">José “El Fit” Rodríguez</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"¡Me encanta su Coffee bar! El café proteico es brutal."</p>
+            <footer class="blockquote-footer">Laura Pérez</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- ====== SECCIÓN CONTACTO / UBICACIÓN ====== -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dirección:</h5>
+            <p>Calle Principal, No. 123, Caracas, Venezuela</p>
+            <h5>Horarios:</h5>
+            <p>
+              Lunes a Viernes: 6:00 am – 10:00 pm<br />Sábado: 7:00 am – 8:00 pm
+            </p>
+            <h5>Redes Sociales:</h5>
+            <a href="#" class="me-3"
+              ><i class="fa-brands fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" class="me-3"
+              ><i class="fa-brands fa-facebook fa-lg"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+          </div>
+          <div class="col-md-6">
+            <!-- Aquí podrías incrustar un iframe de Google Maps -->
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.947106216423!2d-66.90360308570786!3d10.480594392718425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58d2f4a54e75%3A0x123456789abcdef0!2sCaracas%2C%20Venezuela!5e0!3m2!1ses!2sve!4v1621334512345!5m2!1ses!2sve"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 GymPana. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <!-- Tu JavaScript personalizado -->
+
+    <!--Seccion de Productos-->
+    <script src="js/productos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

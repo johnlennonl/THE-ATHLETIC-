@@ -1,0 +1,223 @@
+/* css/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Ejemplo de variables CSS para mantener colores uniformes */
+:root {
+  --color-primario: #00d1ff; /* Azul claro estilo Gym */
+  --color-secundario: #6559ff; /* Morado */
+  --color-oscuro: #222; /* Para fondos oscuros */
+  --color-claro: #f8f9fa; /* Bootstrap “light” */
+  --color-principalHover: #fe0000; /* Rojo para hover en botones */
+}
+
+/* Body y tipografía */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-claro);
+  color: #333;
+}
+
+/* Navbar personalizado */
+.navbar {
+  background-color: var(--color-claro) !important;
+}
+
+.navbar-brand {
+  color: var(--color-oscuro) !important;
+  font-size: 1.5rem;
+}
+
+/* Enlaces en el navbar */
+.nav-link {
+  color: var(--color-claro) !important;
+  font-weight: 600;
+  text-transform: uppercase;  
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  
+}
+
+.nav-link:hover {
+  color: var(--color-principalHover) !important;
+  transition: color 0.3s ease;
+  
+}
+
+/* Botones principal y secundario */
+.btn-primary {
+  background-color: var(--color-oscuro);
+  border-color: var(--color-principalHover);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-principalHover);
+  border-color: var(--color-principalHover);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+
+.logotipo {
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+/* Tarjetas (cards) */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Hero */
+#hero {
+  position: relative;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* capa oscura encima de la imagen */
+}
+
+/* Ajustar texto del hero para que esté sobre la capa oscura */
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-oscuro);
+}
+
+footer p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+
+.contenedorLogo{
+  width: 234px;
+  background-color: transparent;
+}
+
+
+.BtnComprarModal{
+  background-color: #28a745;
+  color: var(--color-claro);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+
+.BtnCardSuplemento{
+  background-color: var(--color-oscuro);
+  border: 1px solid var(--color-claro);
+  color: var(--color-claro);
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.BtnCardSuplemento:hover {
+  background-color: var(--color-principalHover);
+  color: var(--color-claro);
+  transition: background-color 0.3s ease;
+}
+
+.imgModal{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.BtnVerMas{
+  background-color: transparent;
+  color: var(--color-oscuro);
+  border: 1px solid var(--color-oscuro);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navbar{
+  background-color: transparent !important;
+  
+}
+
+
+/* bTN VER MAS  */
+/* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
