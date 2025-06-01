@@ -402,6 +402,48 @@ html, body {
 
 
 
+/* Btn Fixeado */
+
+    #btnScrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;              /* círculo perfecto */
+      background-color: var(--color-principalHover) ;        /* azul brillante (puedes cambiarlo) */
+      color: #fff;                     /* color blanco para el ícono */
+      font-size: 1.4rem;               /* tamaño del ícono */
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      z-index: 999;                    /* encima de todo */
+      display: none;                   /* inicialmente oculto */
+    }
+
+    /* Hover: cambio de color y leve levantón */
+    #btnScrollTop:hover {
+      background-color: #484754;       /* morado (puedes cambiar a tu color secundario) */
+      transform: translateY(-2px);
+    }
+
+    /* Cuando el script agregue la clase "show", se mostrará en pantalla */
+    #btnScrollTop.show {
+      display: flex;                   /* lo convierte en flex para centrar el ícono */
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Opcional: cambiar tamaño en móviles */
+    @media (max-width: 576px) {
+      #btnScrollTop {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+      }
+    }
+
     small {
       font-size: 0.8rem;
       letter-spacing: 1px;
