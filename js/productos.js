@@ -36,7 +36,7 @@ const productos = [
         id: "whey1",
         nombre: "Whey Protein Blend",
         descripcion: "1kg de proteína concentrada sabor chocolate.",
-        precio: "$34.99",
+        precio: "34.99",
         imagen: "https://cdn.shopify.com/s/files/1/0932/3141/5614/files/GLAZED_DONUT.webp?v=1746469904&width=757",
         detalles: `
             <ul class="list-unstyled mb-2">
@@ -108,7 +108,7 @@ const productos = [
   productos.forEach(prod => {
     // 3.1) Card de Bootstrap
     const cardHTML = `
-      <div class="col-md-3 mb-4">
+      <div class="col-md-4 mb-4 ">
         <div class="card h-100 shadow">
           <img src="${prod.imagen}" class="card-img-top " alt="${prod.nombre}">
           <div class="card-body text-center">
@@ -116,7 +116,7 @@ const productos = [
             <p class="card-text">${prod.descripcion}</p>
             <p class="fw-bold">$${prod.precio}</p>
             <button 
-              class="btn btn-outline-primary btn-sm BtnCardSuplemento" 
+              class="btn  btn-sm BtnCardSuplemento " 
               data-bs-toggle="modal" 
               data-bs-target="#modal-${prod.id}"
             >
